@@ -6,7 +6,8 @@
 
 getPair :: Int -> Bool
 getPair x | ( mod x 2 == 0 ) = True
-            | otherwise = False 
+          | otherwise = False 
 
+lista =  [x | x <- [1..10], getPair x, x > 5]
 
-[x | x <- [1..10], getPair x]      
+listaTupla = [(x,y) | x <- [1..5], y <- [1..5]]
