@@ -12,10 +12,10 @@ list_size (x0:xs0) (x1:xs1)
     | otherwise = False
 -}
 
-comp_list :: [Int] -> [Int] -> Bool
-comp_list [] [] = True
-comp_list [] _  = False
-comp_list _  [] = False
-comp_list (x0:xs0) (x1:xs1) | x0 == x1 = comp_list xs0 xs1
-                            | otherwise = False
+listCompare :: [Int] -> [Int] -> Bool
+listCompare [] [] = True
+listCompare [] _  = False
+listCompare _  [] = False
+listCompare (x0:xs0) (x1:xs1) | x0 == x1 = listCompare xs0 xs1
+                              | otherwise = False
                             
