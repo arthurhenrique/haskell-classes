@@ -14,3 +14,6 @@ is_pairs :: [Int] -> Bool
 is_pairs [] = True
 is_pairs (x:xs) | ( x `mod` 2 == 0 ) = is_pairs xs
                 | otherwise = False
+
+
+
