@@ -14,8 +14,7 @@ removeMenor (x:xs)  | (x == menor (x:xs)) = xs
 
 ordenaTmp :: [Int] -> [Int] -> [Int]
 ordenaTmp listaOrdenada [] = listaOrdenada
-ordenaTmp listaOrdenada (x:xs) = ordenaTmp(listaOrdenada++[menor(x:xs)]) 
-                                          (removeMenor (x:xs))
+ordenaTmp listaOrdenada (x:xs) = ordenaTmp(listaOrdenada++[menor(x:xs)]) (removeMenor (x:xs))
 
 ordena :: [Int] -> [Int]
 ordena [] = []
