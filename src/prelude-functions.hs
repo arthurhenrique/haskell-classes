@@ -46,3 +46,5 @@ cycle [1]
 --splitAt -> retorna uma lista cortada a partir de um parametro n
 splitAt 6 "arthurhenrique"
 
+
+
